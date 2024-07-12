@@ -144,6 +144,50 @@
     </div>
 
 
-    <script src="/main.js"></script>
+    <script>
+        let other_actvis = document.querySelector(".other_act")
+let main_block = document.getElementById("main_block")
+
+function renderEl(text_name_val,prs,coin_Sum,coin_balance,path,width) {
+    
+    let el = document.createElement("div")
+    el.classList.add("main_block_el")
+    el.innerHTML = `
+        <div class="main_block_el_start">
+                <div class="image_block">
+                    <img src=${path} width=${width} class="image" >
+                </div>
+            </div>
+            <div class="dol_main_block_el_center_d">
+                <div class="dol_top_line_t">
+                    <h4 class="text">${text_name_val}</h4>
+                     <h4 class="text hide">${coin_balance} ${prs}</h4>
+                </div>
+
+                <div class="dol_bottom_line_b">
+                    <h4 class="text">${coin_Sum} ₴</h4>
+                </div>
+            </div>
+    `
+    main_block.append(el)
+}
+
+
+other_actvis.onclick = () => {
+    let footer = document.getElementById("footer_block")
+    footer.style.height = "11vh";
+
+    document.querySelector(".block_el_footer").style.height = "100%";
+    document.getElementById("main_block").style.height = "45vh";
+
+    other_actvis.style.display = "none";
+    renderEl("TonCoin","TON","12 000","16 000","/icon//notcoin.png","53")
+    renderEl("TonCoin","TON","69 000,00","1300","/icon//currency.png","49")
+    renderEl("Bitcoin","BTC","25 00000","1","/icon//bitcoin.png","49")
+
+
+}
+
+    </script>
 </body>
 </html>
