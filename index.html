@@ -3,8 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    html{
+    background-color:#222e3c;
+    }
+
+
+    #top_Block{
+        width: 100%;
+        height: 38vh;
+    }
+
+    #main_block_balance{
+        width: 100%;
+        height: 69%;
+        background-color:#17212b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #balance{
+        color: #212d3b;
+    }
+
+    .balance{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:rgba(192, 192, 192, 0.450);
+        font-weight: 200;
+    }
+
+    #balance_summa{
+        color:rgb(233, 228, 228);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size:275%;
+    }
+
+    #button_block_top{
+        background-color: #17212b;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 30%;
+        width: 100%;
+    }
+
+
+    .button_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #17212b;
+    }
+
+
+    .image_s{
+        width: 30px;
+    }
+
+    h5{
+        font-size: 15px;
+        color:#69AFEC;
+    }
+
+    .top_text{
+        color: #69AFEC;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .image_b{
+        width: 3px;
+    }
+
+    .image_block{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main_block{
+        margin-top: 2%;
+        width: 100%;
+        height: 32vh;
+        background-color:#222e3c;
+        overflow-y: auto;
+    }
+
+
+    .main_block_el{
+        background-color: #17212b;
+        width: 100%;
+        height:62px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .main_block_el_start{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 100%;
+    }
+
+    .main_block_el_center{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        color:rgb(233, 228, 228);
+    }
+
+    .text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        color:rgba(255, 255, 255, 0.938);
+    }
+
+    .ton_cpt{
+        border-radius: 25px;
+    }
+
+    .btn{
+        border-radius: 5px;
+        border: solid black 0px;
+        color: rgb(233, 228, 228);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:700;
+        box-sizing: border-box;
+        margin-right: 3%;
+        background-color:#5188c1;
+        width: 18%;
+        height: 50%;
+    }
+
+    .dol_main_block_el_center{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: solid black 1px;
+    }
+
+    .dol_top_line{
+        width: 96%;
+        height: 50%;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .circle_dol{
+        width: 65%;
+        height: 80%;
+        background-color:#28C381;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dol{
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:200;
+    }
+
+    .dol_bottom_line{
+        align-items: start;
+        width: 96%;
+        height: 50%;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main_block_el_center_other{
+        width: 82%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .hide{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:rgba(192, 192, 192, 0.550);
+        font-weight: 500;
+    }
+
+    #footer_block{
+        margin-top: 3%;
+        background-color:#212d3b;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .block_el_footer{
+        width: 100%;
+        height: 42%;
+        background-color: #17212b;
+        display: flex;
+        flex-direction: row;
+        }
+
+        .footer_block_center{
+            display: flex;
+            width: 85%;
+            height: 100%;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+        }
+
+        .history_transaction{
+            width: 60%;
+            height:75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#8F8E94;
+            border-radius: 11px;
+        }
+
+        .nn{
+            background-color: black;
+        }
+        .nne{
+            display: none;
+        }
+
+        .other_act.nne{
+            display: none;
+        }
+
+        .true{
+            display: block;
+        }
+
+        .none{
+            display: none;
+        }
+
+        .val{
+            width: 70%;
+        }
+
+        .dol_top_line_t{
+            align-items: start;
+            width: 78%;
+            height: 96%;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dol_bottom_line_b{
+            align-items: center;
+            height: 96%;
+            width: 20%;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dol_main_block_el_center_d{
+            width: 85%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            border-top: solid black 1px;
+        }
+
+
+        .image_rev{
+            rotate: 90deg;
+        }
+
+
+        .main_block_el_start_circle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            height: 100%;
+        }
+
+        .circle_stopka{
+            width: 65%;
+            height: 80%;
+            border-radius: 25px;
+            background-color: #69AFEC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body> 
     <div id="top_Block">
@@ -143,51 +469,50 @@
         </div>
     </div>
 
+    <script >
 
-    <script>
-        let other_actvis = document.querySelector(".other_act")
-let main_block = document.getElementById("main_block")
+    let other_actvis = document.querySelector(".other_act")
+    let main_block = document.getElementById("main_block")
 
-function renderEl(text_name_val,prs,coin_Sum,coin_balance,path,width) {
-    
-    let el = document.createElement("div")
-    el.classList.add("main_block_el")
-    el.innerHTML = `
-        <div class="main_block_el_start">
-                <div class="image_block">
-                    <img src=${path} width=${width} class="image" >
+    function renderEl(text_name_val,prs,coin_Sum,coin_balance,path,width) {
+        
+        let el = document.createElement("div")
+        el.classList.add("main_block_el")
+        el.innerHTML = `
+            <div class="main_block_el_start">
+                    <div class="image_block">
+                        <img src=${path} width=${width} class="image" >
+                    </div>
                 </div>
-            </div>
-            <div class="dol_main_block_el_center_d">
-                <div class="dol_top_line_t">
-                    <h4 class="text">${text_name_val}</h4>
-                     <h4 class="text hide">${coin_balance} ${prs}</h4>
+                <div class="dol_main_block_el_center_d">
+                    <div class="dol_top_line_t">
+                        <h4 class="text">${text_name_val}</h4>
+                        <h4 class="text hide">${coin_balance} ${prs}</h4>
+                    </div>
+
+                    <div class="dol_bottom_line_b">
+                        <h4 class="text">${coin_Sum} ₴</h4>
+                    </div>
                 </div>
-
-                <div class="dol_bottom_line_b">
-                    <h4 class="text">${coin_Sum} ₴</h4>
-                </div>
-            </div>
-    `
-    main_block.append(el)
-}
+        `
+        main_block.append(el)
+    }
 
 
-other_actvis.onclick = () => {
-    let footer = document.getElementById("footer_block")
-    footer.style.height = "11vh";
+    other_actvis.onclick = () => {
+        let footer = document.getElementById("footer_block")
+        footer.style.height = "11vh";
 
-    document.querySelector(".block_el_footer").style.height = "100%";
-    document.getElementById("main_block").style.height = "45vh";
+        document.querySelector(".block_el_footer").style.height = "100%";
+        document.getElementById("main_block").style.height = "45vh";
 
-    other_actvis.style.display = "none";
-    renderEl("TonCoin","TON","12 000","16 000","/icon//notcoin.png","53")
-    renderEl("TonCoin","TON","69 000,00","1300","/icon//currency.png","49")
-    renderEl("Bitcoin","BTC","25 00000","1","/icon//bitcoin.png","49")
+        other_actvis.style.display = "none";
+        renderEl("TonCoin","TON","12 000","16 000","/icon//notcoin.png","53")
+        renderEl("TonCoin","TON","69 000,00","1300","/icon//currency.png","49")
+        renderEl("Bitcoin","BTC","25 00000","1","/icon//bitcoin.png","49")
 
 
-}
-
+    }
     </script>
 </body>
 </html>
