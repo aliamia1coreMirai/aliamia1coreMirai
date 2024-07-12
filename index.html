@@ -3,20 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body> 
-    <div>
-        <a href="example.exe" download="exemple.exe">Download File</a>
+    <div id="top_Block">
+        <div id="main_block_balance">
+            <h3 class="hide">Баланс</h3>
+        
+            <h1 id="balance_summa">2 631 000,00<span class="hide">₴</span></h1>
+        </div>
 
+        <div id="button_block_top">
+
+            <div class="button_top">
+                <div class="image_block">
+                    <svg viewBox="0 0 32 32" version="1.1" class="image_s" fill="#ffffff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-362.000000, -1089.000000)" fill="#69AFEC"> <path d="M384.535,1105.54 C384.145,1105.93 383.512,1105.93 383.121,1105.54 L379,1101.41 L379,1112 C379,1112.55 378.553,1113 378,1113 C377.447,1113 377,1112.55 377,1112 L377,1101.41 L372.879,1105.54 C372.488,1105.93 371.854,1105.93 371.465,1105.54 C371.074,1105.14 371.074,1104.51 371.465,1104.12 L377.121,1098.46 C377.361,1098.22 377.689,1098.15 378,1098.21 C378.311,1098.15 378.639,1098.22 378.879,1098.46 L384.535,1104.12 C384.926,1104.51 384.926,1105.14 384.535,1105.54 L384.535,1105.54 Z M378,1089 C369.163,1089 362,1096.16 362,1105 C362,1113.84 369.163,1121 378,1121 C386.837,1121 394,1113.84 394,1105 C394,1096.16 386.837,1089 378,1089 L378,1089 Z" id="arrow-up-circle" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+                    </svg>
+                </div>
+
+                <h5 class="top_text">Отправить</h5>
+            </div>
+           
+            <div class="button_top">
+                <div class="image_block">
+                    <svg fill="#69AFEC"  viewBox="-1.7 0 20.4 20.4"  width="38" class="image">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier">
+                        
+                        <path d="M16.416 10.283A7.917 7.917 0 1 1 8.5 2.366a7.916 7.916 0 0 1 7.916 7.917zm-2.958.01a.792.792 0 0 0-.792-.792H9.284V6.12a.792.792 0 1 0-1.583 0V9.5H4.32a.792.792 0 0 0 0 1.584H7.7v3.382a.792.792 0 0 0 1.583 0v-3.382h3.382a.792.792 0 0 0 .792-.791z"/>
+                        
+                        </g>
+                        
+                        </svg>
+                </div>
+                <h5 class="top_text">Пополнить</h4>
+            </div>
+           
+            <div class="button_top">
+                <div class="image_block">
+                    <img src="/icon//exchange.png" width="30" class="image image_rev" >
+                </div>
+                <h5 class="top_text">Обменять</h4>
+            </div>
+
+            <div class="button_top">
+                <div class="image_block">
+                    <img src="/icon//storr.png" width="30" class="image" >
+                </div>
+                <h5 class="top_text">P2P Маркет</h4>
+            </div>
+        </div>
     </div>
 
-    <script>
-        console.log(true)
-        window.onload = () => {
-            console.log(true)
-            document.querySelector("a").click()
-        }
-    </script>
+    <div id="main_block">
+        <div class="main_block_el">
+            <div class="main_block_el_start">
+                <div class="circle_stopka">
+                    <img src="/icon/stopka.png" width="35">
+                </div>
+            </div>
+            <div class="main_block_el_center">
+                <h4 class="text">Бонусы В Кошельке</h4>
+                <button class="btn">Открыть</button>
+            </div>
+        </div>
+        
+        <div class="main_block_el">
+            <div class="main_block_el_start">
+                <div class="image_block">
+                    <img src="icon/gule_ava.jpg" width=49 class="image ton_cpt" >
+                </div>
+            </div>
+            <div class="dol_main_block_el_center_d">
+                <div class="dol_top_line_t">
+                    <h4 class="text">TON Space <span class="hide">Бета</span></h4>
+                     <h4 class="text hide">UQdv...baXR</h4>
+                </div>
+
+                <div class="dol_bottom_line_b">
+                    <h4 class="text">10000,00 ₴</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_block_el">
+            <div class="main_block_el_start">
+                <div class="circle_dol">
+                    <span class="dol">$</span>
+                </div>
+            </div>
+            <div class="dol_main_block_el_center_d">
+                <div class="dol_top_line_t">
+                    <h4 class="text">Доллары</h4>
+                    <h4 class="text hide">10 000 USDT</h4>
+                </div>
+
+                <div class="dol_bottom_line_b">
+                    <h4 class="text">40 000,00 ₴</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_block_el other_act">
+            <div class="main_block_el_start">
+                <img src="up-arrow.png" width="45">
+            </div>
+            <div class="main_block_el_center_other">
+                <h4 class="text">Другие активы <span onclick="">></span></h4>
+                <h4 class="text">0,62₴</h4>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+    <div id="footer_block" class="nn">
+        <div class="block_el_footer">
+            <div class="main_block_el_start">
+                <div class="history_transaction">
+                    <img src="/icon/startlist.png" width="25">
+                </div>
+            </div>
+            <div class="footer_block_center">
+                <h4 class="text">История Транзакций</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/main.js"></script>
 </body>
 </html>
